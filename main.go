@@ -32,7 +32,7 @@ func test(rw http.ResponseWriter, req *http.Request) {
 
 func main() {
 var err error
-        db, err = sql.Open("mysql", "root:1234@tcp(10.152.34.242:3307)/mydb")
+        db, err = sql.Open("mysql", "root:1234@tcp(10.152.33.110:3306)/mydb")
         if err != nil{
                 fmt.Println("Error connecting db")
                 return;
